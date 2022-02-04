@@ -11,5 +11,5 @@
 - 版本检查(全部应用版本,包括txt、apk、ext、msi、deb等)
 
 # 待开发
-+ <input type="checkbox" checked> L2Y版本检查
-* <input type="checkbox" checked> api版本检查
++ [x] L2Y版本检查
+* [x] api版本检查
