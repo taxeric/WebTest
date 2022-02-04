@@ -10,14 +10,15 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@TableName(value = "_ApiParams")
-public class ApiParamsEntity {
+@TableName(value = "_version_controller")
+public class VersionControlEntity {
 
     @TableId(type = IdType.AUTO)
     private Integer id;
-    private String paramName;
-    private String paramValue;
-    private String paramDesc;
-    private String paramType;
-    private Integer parentUrlId;
+    private int hasUpdate;
+    private String updateUrl;
+    private String updateDesc;
+    private String updateId;
+    private long fileSize;
+    private int versionCode;
 }
