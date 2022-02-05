@@ -11,6 +11,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import java.io.File;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
@@ -50,6 +51,12 @@ class MybatisPlusApplicationTests {
         user.setName("teddy");
         userMapper.insert(user);
         System.out.println(user);
+    }
+
+    @Test
+    void testFile(){
+        File file = new File("E:\\资料");
+        System.out.println(file.isDirectory());
     }
 
     @Test
