@@ -12,6 +12,7 @@
     <artifactId>mybatis_plus</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>mybatis_plus</name>
+<!--    <packaging>war</packaging>-->
     <description>Demo project for Spring Boot</description>
     <properties>
         <java.version>1.8</java.version>
@@ -87,6 +88,15 @@
     <build>
         <plugins>
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.22.2</version>
+                <configuration>
+                    <testFailureIgnore>true</testFailureIgnore>
+                </configuration>
+            </plugin>
+            <plugin>
+
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
@@ -99,6 +109,7 @@
                 </configuration>
             </plugin>
         </plugins>
+        <finalName>L2YUtils</finalName>
     </build>
 
 </project>
