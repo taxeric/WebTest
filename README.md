@@ -10,6 +10,7 @@
 - 添加api
 - 添加api参数
 - 版本检查(全部应用版本,包括txt、apk、ext、msi、deb等)
+- 文件下载(包括exception,详情见文档)
 
 # 待开发
 + [x] L2Y版本检查
